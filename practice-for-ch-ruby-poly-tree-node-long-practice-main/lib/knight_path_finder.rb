@@ -83,8 +83,8 @@ class KnightPathFinder
     build_move_tree(end_pos)
     board[row][col].bfs(end_pos)
   end
-  def trace_path_back(end_pos)
-    row_e, col_e = end_pos
-    
-  end
+  # def trace_path_back(end_pos)
+  #   row_e, col_e = end_pos
+
+  # end
 end

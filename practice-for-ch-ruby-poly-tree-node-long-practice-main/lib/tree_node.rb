@@ -29,7 +29,7 @@ class PolyTreeNode
   def dfs(target_value)
     return self if self.value == target_value
     @children.each do |child_node|
-      result = child_node.dfs(target_value)
+      result = child_node.dfs_tracked(target_value)
       return result if !result.nil?
     end
     nil
